@@ -1,0 +1,23 @@
+{
+  "name": "pic-terest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pic-terest - a Pinterest-style image wall with GitHub login, masonry layout and broken-image placeholders.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "generate": "node scripts/generate-assets.js",
+    "prestart": "node scripts/generate-assets.js --if-missing"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "imagesloaded": "^5.0.0",
+    "jquery": "^3.7.1",
+    "masonry-layout": "^4.2.2"
+  }
+}
